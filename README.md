@@ -2,6 +2,32 @@
 
 This repository is designed for those who want to learn the basics of the Java programming language. The content covers the fundamental building blocks of Java, its syntax, and basic programming concepts.
 
+- [Syntax](#syntax)
+- [Variables](#variables)
+- [Data Types](#data-types)
+- [Type Casting](#type-casting)
+- [Operators](#operators)
+- [Ternary Operator](#ternary-operator)
+- [Loops](#loops)
+- [Arrays](#arrays)
+- [Methods](#methods)
+- [Java Classes](#java-classes)
+    - [Java OOP](#java-oop)
+    - [Classes & Objects](#what-are-classes-and-objects)
+    - [Create a Class](#create-class)
+    - [Create an Object](#create-an-object)
+    - [Using Multiple Classes](#using-multiple-classes)
+    - [Class Attributes](#class-attributes)
+    - [Accessing Attributes](#accessing-attributes)
+    - [Modify Attributes](#modify-attributes)
+    - [Multiple Objects](#multiple-objects)
+    - [Multiple Attributes](#multiple-attributes)
+    - [Static vs Public](#static-vs-public)
+    - [Constructors](#constructors)
+    - [Modifiers](#modifiers)
+    - [Abstract](#abstract)
+
+
 **Reference:** [w3Schools](https://www.w3schools.com/java/default.asp)
 
 # Syntax
@@ -102,7 +128,7 @@ It is recommended to use descriptive names in order to create understandable and
 > `System.out.println(txt.indexOf("e"));`
 
 
-# DataTypes:
+# Data Types:
 
 
 Data types are divided into two groups:
@@ -604,7 +630,7 @@ public class Main {
 3. helps to keep the code "Dont Repeat Yourself" (DRY)
 4. makes code easier to maintain, modify and debug
 
-## What are classes & objects?
+## What are classes and objects?
 
 
 classes and objects are two main aspects of oop
@@ -629,7 +655,7 @@ everything in java is associated with classes and objects along with its attribu
 > 	**a class is like an object constructor or a "blueprint" for creating objects**
 
 
-## create a class
+## create class
 
 
 	use keyword: class
@@ -641,7 +667,7 @@ everything in java is associated with classes and objects along with its attribu
     ```
 
 
-# create a object
+# create an object
 
 
 	to create an object of main specify class name followed by object name and use the keyword "new"
@@ -701,7 +727,7 @@ it is actually an attribute of class
 
 create a class called "main" with two attributes x & y :
 
-```java
+```
 public class Main {
   int x = 5;
   int y = 3;

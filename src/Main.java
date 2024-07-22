@@ -400,5 +400,14 @@ myObj = new MyClass();
         //? The Car class should inherit the attributes and methods from the Vehicle class:
         // class Car extends Vehicle
 
+
+        //! Ev.java contd:
+        Ev ev1 = new Ev(); // ev şablonunu kullanarak yeni bir ev objesi oluşturdun - ev instanceı
+        Ev ev2 = new Ev();
+        //* 2. ev objesi için istenen parametreleri - özellikleri- attribute manipule ettim
+        ev2.kapiRengi = "sari";
+        ev2.camSayisi = 8;
+        System.out.println("ev1:" + ev1.kapiRengi + " "+ ev1.camSayisi );
+        System.out.println("ev2:" + ev2.kapiRengi + " " + ev2.camSayisi);
     }
 }

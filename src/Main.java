@@ -409,5 +409,15 @@ myObj = new MyClass();
         ev2.camSayisi = 8;
         System.out.println("ev1:" + ev1.kapiRengi + " "+ ev1.camSayisi );
         System.out.println("ev2:" + ev2.kapiRengi + " " + ev2.camSayisi);
+
+
+    }
+
+    public static void constructorExample(String[] args) {
+        Constructor a1 = new Constructor();         // constructor nesne oluşturmak için atanır. default olarak.
+        // her class instance oluşturmadan önce bi constructor çalıştırır
+        a1.model = "a1a1modela1";
+        System.out.println(a1.model);
+
     }
 }

@@ -28,14 +28,15 @@ This repository is designed for those who want to learn the basics of the Java p
     - [Abstract](#abstract)
 
 
-**Reference:** [w3Schools](https://www.w3schools.com/java/default.asp)
+**Reference:** [w3Schools](https://www.w3schools.com/java/default.asp), [İrfan Duman](https://www.youtube.com/playlist?list=PLd7oUmRdt0s5uKceEAK50Z6GfC0RI5SFT), [Kodlama Vakti](https://www.youtube.com/playlist?list=PLEcJSEQK_cD5KHgg9sXumeg659hAr2j4W)
 
 # Syntax
 
 - every line of code that runs in java must in a class. a class should always start uppercase first letter.
 -  java file must match the class name
 - You should also note that each code statement must end with a semicolon (`;`)
-
+- package = file
+- maven projects -> management 
 **every java program has a class name which must match the filename & every program must contain the main() method**
 
 # Variables
@@ -127,10 +128,54 @@ It is recommended to use descriptive names in order to create understandable and
 
 > `System.out.println(txt.indexOf("e"));`
 
+Main method:
+system begin with this method.
+> firstly run **main** method. To run other methods, it is necessary to run it through the main method.
+
+
+General Syntax:
+```java
+public class OrnekSinif { // Başharfi büyük, class name
+    public static void main(String[] args){ // main methodu yerleştiriliyor.
+        //todo auto-generated method stub 
+      //statementsları bodyde yazarız. body mainde olur. main çalışır.
+      System.out.println("Hello World"); 
+    }
+}
+```
+
+System.out: 
+
+```java
+System.out.print("Merhaba");
+System.out.print("Hello");
+```
+output like this: MerhabaHello. Because of "print"
+If use println (ln means line, this output only one line)
+
+
+> "\n" : bir alt satıra iner. print ile kullanılırsa println mantığına çevirir
+> "\t" : tab
+
+```java
+        // \n means next line
+        System.out.print("\nDünya");
+        System.out.print("Merhaba\n Dünya");
+        // if use \n = println
+        System.out.println("Println Dünya");
+        //if use \t means 1 tab
+        System.out.println("\t Merhaba tablı örnek");
+
+```
 
 # Data Types:
 
+> veri tipi desğişken ismi ve değişken değeri. ama adresleme kısmı işletim sistemiyle alakalı
 
+tamsayı: int, byte, short, long
+ondalıklı sayı: float, double
+karakter: char
+mantıksal: boolean
 Data types are divided into two groups:
 
 

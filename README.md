@@ -28,8 +28,13 @@ This repository is designed for those who want to learn the basics of the Java p
     - [Abstract](#abstract)
 
 
-**Reference:** [w3Schools](https://www.w3schools.com/java/default.asp), [İrfan Duman](https://www.youtube.com/playlist?list=PLd7oUmRdt0s5uKceEAK50Z6GfC0RI5SFT), [Kodlama Vakti](https://www.youtube.com/playlist?list=PLEcJSEQK_cD5KHgg9sXumeg659hAr2j4W)
+**Reference:** [w3Schools](https://www.w3schools.com/java/default.asp), [İrfan Duman](https://www.youtube.com/playlist?list=PLd7oUmRdt0s5uKceEAK50Z6GfC0RI5SFT), [Kodlama Vakti -- Mustafa Çetindağ](https://www.youtube.com/playlist?list=PLEcJSEQK_cD5KHgg9sXumeg659hAr2j4W)
 
+### **Algortirma kurarken:**
+> değişkenleri tespit et: kullanıcıdan alınacak girdi ve çıktı vermek için gerekli
+> hesaplamaları yap
+> koşullara bak: isterlere göre koşul sağlanıyor mu kurgula
+> sonucu yazdır: kullanıcıya gösterilmek istenen errormsg - succces vs output çıktıları ver
 # Syntax
 
 - every line of code that runs in java must in a class. a class should always start uppercase first letter.
@@ -146,7 +151,7 @@ public class OrnekSinif { // Başharfi büyük, class name
 
 System.out: 
 
-```java
+```
 System.out.print("Merhaba");
 System.out.print("Hello");
 ```
@@ -157,7 +162,7 @@ If use println (ln means line, this output only one line)
 > "\n" : bir alt satıra iner. print ile kullanılırsa println mantığına çevirir
 > "\t" : tab
 
-```java
+```
         // \n means next line
         System.out.print("\nDünya");
         System.out.print("Merhaba\n Dünya");
@@ -176,13 +181,16 @@ tamsayı: int, byte, short, long
 ondalıklı sayı: float, double
 karakter: char
 mantıksal: boolean
-Data types are divided into two groups:
 
+Data types are divided into two groups:
 
 - Primitive data types - includes `byte`, `short`, `int`, `long`, `float`, `double`, `boolean` and `char`
 - Non-primitive data types - such as `[String](https://www.w3schools.com/java/java_strings.asp)`, [Arrays](https://www.w3schools.com/java/java_arrays.asp) and [Classes](https://www.w3schools.com/java/java_classes.asp) (you will learn more about these in a later chapter)
 
 **The `float` and `double` data types can store fractional numbers. Note that you should end the value with an "f" for floats and "d" for doubles:**
+**double:** yüksek duyarlıklı, üst düzey logaritmik fonksiyonlar ve hassas matematiksel işlemler. daha yavaştır ve fazla yer kapsal. bu işlemler arasında ms oynar.
+**float**hız ve bellek. tam sayı yazsan da float a = 1.0 çıktısını verir. float tanımlamasından sonra f ya da F konulur doubledan ayırmak için
+> hassas işlemleri cos-sin gibi double ile döndürür.
 
 ```
 float myNum = 5.75f;
@@ -222,16 +230,17 @@ Non-primitive data types are called **reference types** because they refer to ob
 # Operators
 
 > Java divides the operators into the following groups:
-
 > - Arithmetic operators: addition (+), subtraction (-), multiplication (*), division(/), modulus(%), increment(++) and decrement (--)
 > - Assignment operators: "=", "+=", "-=", "*=", "/=", "%=", "&=", "|=", "^=", "<<=", ">>="
 > - Comparison operators: "==", "!=", "<", ">", "<=", ">="
 > - Logical operators: &&, ||, !
-> - Bitwise operators
+> - Bitwise operators: b = (a==1) ? 1 : 0
 
 Java Strings:
 > ***Java uses the `+` operator for both addition and concatenation.Numbers are added. Strings are concatenated.***
 
+**concat işlemi javada her zaman daha maliyetlidir.**
+**formatlamak çok daha az maliyetli ve daha hızlı çalışır concata göre**
 
 special characters:
 
